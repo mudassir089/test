@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.title {
+  font-family: "Saira", sans-serif;
+}
+
+/* Header **************************************************************** */
+.nav {
+  position: fixed !important;
+  background-color: transparent !important;
+  width: 100%;
+  height: 90px;
+  z-index: 1;
+  transition: 0.7s ease-in-out;
+}
+.nav.active {
+  background-color: rgb(4, 22, 56) !important;
+  box-shadow: 5px 10px 30px rgb(64, 64, 65);
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px !important;
+  font-size: 22px !important;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+  color: white !important;
+  font-weight: 600 !important;
+}
+.btn:after,
+.btn:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transition: all 1s;
+}
+
+.btn:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.btn:hover:before {
+  bottom: -1px;
+  right: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+}
+.btn:hover:after {
+  top: -1px;
+  left: -1px;
+  width: 100%;
+  height: 100%;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+}
+/* background Image ****************************************************** */
+.mainCon {
+  height: 100vh;
+  position: relative !important;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url("./images/slide1.jpeg");
+}
+
+/* background Image text ****************************************** */
+.textwithcontact {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 500px;
+  height: 500px;
+  font-family: "Saira";
+  z-index: 0;
+}
+
+.textwithcontact > .text > h2 {
+  color: #fff;
+  font-size: 70px;
+}
+
+p.dummy {
+  margin-top: 10%;
+  font-family: "Open Sans";
+  color: #fff;
+  opacity: 0.5;
+}
+
+.button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 60px;
+}
+
+.button > button {
+  padding: 12px 50px;
+  color: #fff;
+  margin-left: 20px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+.button > button:hover {
+  background-color: rgb(11, 17, 102);
+  transition: 0.5s ease;
+  transform: translateX(2px);
+}
+
+/* Service Card**********************************************************************************/
+
+.car {
+  box-shadow: 0px 0px 10px rgb(200, 199, 199) !important;
+  border-radius: 50px 0 50px 0px !important;
+}
+.car:hover {
+  margin-top: -5px !important;
+  transition: 0.6s ease;
+  color: #94106d;
+}
+
+/* Projects Cards ***********************************************8******************************** */
+.projects {
+  box-shadow: 0px 0px 10px rgb(209, 206, 206) !important;
+  border-radius: 10px !important;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+.projects:hover {
+  background-color: rgb(17, 18, 19) !important;
+
+  transform: translateX(-5px);
+  color: white !important;
+}
+
+p {
+  color: #838282;
+  font-size: 18px;
+}
+
+/* Details Cards ************************************************************ */
+.box {
+  transition: 1s all ease;
+}
+.box:hover {
+  transform: translateX(-5px);
+  background-color: rgba(57, 158, 240, 0.835);
+  color: white !important;
+  cursor: pointer;
+}
+.box p:hover {
+  color: white;
+}
+
+/* Contact Form *****************************************************************************/
+
+textarea,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+/* Contact.js */
+.form {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form > h1 {
+  margin-bottom: 30px;
+}
+
+.form > input,
+textarea {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  border: none;
+  background: #fff;
+  font-size: 20px;
+  color: rgb(0, 0, 32);
+  outline: none;
+}
+
+.form > input:focus,
+textarea:focus {
+  border: 1px solid rgb(0, 0, 196);
+}
+
+.form > textarea {
+  height: 150px;
+  max-width: 600px;
+  min-height: 100px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.form > label {
+  padding-bottom: 15px;
+  color: rgb(0, 0, 32);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.form > button {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  margin-bottom: 40px;
+  background-color: rgb(2, 2, 110);
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 10px;
+}
+
+/* Foooter *********************************************************************************/
+
+.con {
+  max-width: 1170px;
+  margin: auto;
+}
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
